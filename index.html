@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+ 	<title>Home</title>
+
+ 	<head>
+         <nav>
+			<ul>
+	 			 <li>
+					 Home 
+	  			</li>
+                <li>
+                    <a href="#ProjectsSection">Projects</a>
+                </li>
+                <li>
+                    <a href="#Bottom">Contact</a>
+                </li>
+                <img src="IMG_Portrait.jpg" alt="Professional Pic" class="center" />
+			</ul>
+         </nav>
+     </head>
+
+    <body>
+        <!--Display Personal Info-->
+        <h1 align="center">About Me</h1>
+        <h3 align="center">
+            Education:&nbsp; California State University Long Beach
+        </h3>
+        <h3 align="center">
+            Field of study: &nbsp; Computer Science
+        </h3>
+        <h3 align="center">
+            Objective: To begin acquiring hands on experience in the field of cyber security.
+        </h3>
+        <!--Display Projects-->
+        <div id="ProjectsSection">
+            <h1 align="center">Projects and Skills</h1>
+            <!--First Row of projects-->
+            <ul>
+                <li>
+                    <table class="image">
+                        <caption align="bottom">Kali Linux</caption>
+                        <tr>
+                            <td>
+                                <img id="KaliLinuxIMG" src="IMG_KaliLinux.jpg" class="skillsIMG" height="200px" width="400px" />
+                                <!--Modal for the image-->
+                                <div id="kaliLinuxModal" class="modal">
+                                    <!--Close Buttons-->
+                                    <span class="close">&times;</span>
+                                    <!--Modal Content (Nessus image)-->
+                                    <img class="modal-content" id="IMG00" />
+                                    <ul>
+                                        <h3 align="center">Skills:</h3>
+                                        <li>Experience using Kali Linux for Penetration Testing</li>
+                                        <li>Have carried out penetration tests against Linux OS's within VMWare</li>
+                                        <li>Experience working with Nmap, Metasploit-Framework, SE Toolkit, Wireshark, Nessus, JTR, WhoIs</li>
+                                    </ul>
+                                </div>
+                                <!--End of Modal-->
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="image">
+                        <caption align="bottom">C++</caption>
+                        <tr>
+                            <td>
+                                <img id="CIMG" src="IMG_C++Icon.png" class="skillsIMG" height="200px" width="400px" />
+                                <!--Modal for the image-->
+                                <div id="c++Modal" class="modal">
+                                    <!--Close Buttons-->
+                                    <span class="close">&times;</span>
+                                    <!--Modal Content (Nessus image)-->
+                                    <img class="modal-content" id="IMG01" />
+                                    <ul>
+                                        <h3 align="center">Projects:</h3>
+                                        <li>
+                                            <a href="https://github.com/obvios/Document-Classifier" target="_blank">Document Classifier</a> which can 
+                                            label a text file as being either about politics or religion
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/obvios/Task-Scheduler.git" target="_blank">Unit Task SCheduler</a> which uses a disjoint-set implementation to schedule tasks for a single processor
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--End of Modal-->
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="image">
+                        <caption align="bottom">Python</caption>
+                        <tr>
+                            <td>
+                                <img id="PythonIMG" src="IMG_Python.png" class="skillsIMG" height="200px" width="400px" />
+                                <!--Modal for the image-->
+                                <div id="pythonModal" class="modal">
+                                    <!--Close Buttons-->
+                                    <span class="close">&times;</span>
+                                    <!--Modal Content (Nessus image)-->
+                                    <img class="modal-content" id="IMG02" />
+                                    <ul>
+                                        <h3 align="center">Projects:</h3>
+                                        <li>
+                                            Simple <a href="https://github.com/obvios/Nmap-Gui.git" target="_blank">Nmap Gui</a> to scan a network with the option of specifying
+                                            an IP range as well as a port range.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--End of Modal-->
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="image">
+                        <caption align="bottom">Java</caption>
+                        <tr>
+                            <td>
+                                <img id="JavaIMG" src="IMG_Java.png" class="skillsIMG" height="200px" width="400px" />
+                                <!--Modal for the image-->
+                                <div id="javaModal" class="modal">
+                                    <!--Close Buttons-->
+                                    <span class="close">&times;</span>
+                                    <!--Modal Content (Java image)-->
+                                    <img class="modal-content" id="IMG03" />
+                                    <ul>
+                                        <h3 align="center">Projects:</h3>
+                                        <li>
+                                            <a href="https://github.com/obvios/Design-Patterns-Project.git" target="_blank">School  group project</a> to demonstrate knowledge of
+                                            various design patterns in Java.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--End of Modal-->
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        <script src="websiteJS.js"></script>
+        <script src="jquery-3.3.1.min.js"></script>
+    </body>
+
+    <footer>
+        <!--Contact Information-->
+        <div id="Bottom">
+            <h1 align="center">Contact</h1>
+            <ul>
+                <li>
+                    <a href="https://www.github.com/obvios" target="_blank"><img src="IMG_GitHub.png" height="70px" width="70px" />GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/eric-palma-in" target="_blank"><img src="IMG_LinkedIn.png" height="70px" width="70px"/>LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</html>
+<link type="text/css" rel="stylesheet" href="styles.css" />
