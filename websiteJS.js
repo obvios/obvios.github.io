@@ -7,7 +7,7 @@ img1.onclick = function() {
     modalImg1.src = this.src;
 }
 
-var span1 = document.getElementsByClassName("close")[1];
+var span1 = document.getElementsByClassName("close")[0];
 
 span1.onclick = function() {
     modal1.style.display = "none";
@@ -23,7 +23,7 @@ img2.onclick = function () {
     modalImg2.src = this.src;
 }
 
-var span2 = document.getElementsByClassName("close")[2];
+var span2 = document.getElementsByClassName("close")[1];
 
 span2.onclick = function () {
     modal2.style.display = "none";
@@ -38,7 +38,7 @@ img3.onclick = function () {
     modalImg3.src = this.src;
 }
 
-var span3 = document.getElementsByClassName("close")[3];
+var span3 = document.getElementsByClassName("close")[2];
 
 span3.onclick = function () {
     modal3.style.display = "none";
