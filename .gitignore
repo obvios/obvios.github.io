@@ -11,6 +11,7 @@
 
 #Mac
 .DS_Store
+._*
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
