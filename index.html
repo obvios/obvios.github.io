@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+<title>Home</title>
 <html>
 
- 	<title>Home</title>
-
  	<head>
-         <nav>
-			<ul>
+     </head>
+
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <ul>
                 <li>
                     <a href="#ProjectsSection">Projects</a>
                 </li>
@@ -13,19 +16,29 @@
                     <a href="#Bottom">Contact</a>
                 </li>
                 <img src="Images/IMG_Portrait.jpg" alt="Professional Pic" class="center" />
-			</ul>
-         </nav>
-     </head>
+            </ul>
+        </nav>
 
-    <body>
         <!--Display Personal Info-->
-        <h1 align="center">About Me</h1>
-        <h3 align="center">
-            Education:&nbsp; California State University Long Beach
-        </h3>
-        <h3 align="center">
-            Field of study: &nbsp; Computer Science
-        </h3>
+        <div id="About_Me">
+            <h1>About Me</h1>
+            <h3>
+                <p>
+                    Junior developer with a passion for developing high quality, user-friendly software.
+                    Fast learner with the ability to quickly put newly learned concepts to use.
+                </p>
+            </h3>
+            <h3>
+                <p>
+                Education:&nbsp; California State University Long Beach
+                </p>
+            </h3>
+            <h3>
+                <p>
+                Field of study: &nbsp; Computer Science
+                </p>
+            </h3>
+        </div>
 
         <!--List of Skills-->
         <div id="Top_Skills">
@@ -37,111 +50,106 @@
 
         <!--Display Projects-->
         <div id="ProjectsSection">
-            <h1 align="center">Projects and Skills</h1>
+            <h1 align="center">Projects</h1>
 
             <!--Projects-->
-            <ul>
+            <ul align="center">
                 <li>
-                    <table class="image">
-                        <caption align="bottom">C++</caption>
-                        <tr>
-                            <td>
-                                <img id="CIMG" src="Images/IMG_C++Icon.png" class="skillsIMG" height="200px" width="400px" />
-                                <!--Modal for the image-->
-                                <div id="c++Modal" class="modal">
-                                    <!--Close Buttons-->
-                                    <span class="close">&times;</span>
-                                    <!--Modal Content (Nessus image)-->
-                                    <img class="modal-content" id="IMG01" />
-                                    <ul>
-                                        <h3 align="center">Projects:</h3>
-                                        <li>
-                                            <a href="https://github.com/obvios/Document-Classifier" target="_blank">Document Classifier</a> which can
-                                            label a text file as being either about politics or religion
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/obvios/Task-Scheduler.git" target="_blank">Unit Task SCheduler</a> which uses a disjoint-set implementation to schedule tasks for a single processor
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--End of Modal-->
-                            </td>
-                        </tr>
-                    </table>
+                    <img id="CIMG" src="Images/IMG_C++Icon.png" class="skillsIMG" height="200px" width="300px" />
+                    <!--Modal for the image-->
+                    <div id="c++Modal" class="modal">
+                        <!--Close Buttons-->
+                        <span class="close">&times;</span>
+                        <!--Modal Content (Nessus image)-->
+                        <img class="modal-content" id="IMG01" />
+                        <ul>
+                            <h3 align="center">Projects:</h3>
+                            <li>
+                                <a href="https://github.com/obvios/Document-Classifier" target="_blank">Document Classifier</a> which can
+                                label a text file as being either about politics or religion
+                            </li>
+                            <li>
+                                <a href="https://github.com/obvios/Task-Scheduler.git" target="_blank">Unit Task SCheduler</a> which uses a disjoint-set implementation to schedule tasks for a single processor
+                            </li>
+                        </ul>
+                    </div>
+                    <!--End of Modal-->
                 </li>
                 <li>
-                    <table class="image">
-                        <caption align="bottom">Python</caption>
-                        <tr>
-                            <td>
-                                <img id="PythonIMG" src="Images/IMG_Python.png" class="skillsIMG" height="200px" width="400px" />
-                                <!--Modal for the image-->
-                                <div id="pythonModal" class="modal">
-                                    <!--Close Buttons-->
-                                    <span class="close">&times;</span>
-                                    <!--Modal Content (Nessus image)-->
-                                    <img class="modal-content" id="IMG02" />
-                                    <ul>
-                                        <h3 align="center">Projects:</h3>
-                                        <li>
-                                            Simple <a href="https://github.com/obvios/Nmap-Gui.git" target="_blank">Nmap Gui</a> to scan a network with the option of specifying
-                                            an IP range as well as a port range.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--End of Modal-->
-                            </td>
-                        </tr>
-                    </table>
+                    <img id="PythonIMG" src="Images/IMG_Python.png" class="skillsIMG" height="200px" width="300px" />
+                    <!--Modal for the image-->
+                    <div id="pythonModal" class="modal">
+                        <!--Close Buttons-->
+                        <span class="close">&times;</span>
+                        <!--Modal Content-->
+                        <img class="modal-content" id="IMG02" />
+                        <ul>
+                            <h3 align="center">Projects:</h3>
+                            <li>
+                                Simple <a href="https://github.com/obvios/Nmap-Gui.git" target="_blank">Nmap Gui</a> to scan a network with the option of specifying
+                                an IP range as well as a port range.
+                            </li>
+                        </ul>
+                    </div>
+                    <!--End of Modal-->
                 </li>
                 <li>
-                    <table class="image">
-                        <caption align="bottom">Java</caption>
-                        <tr>
-                            <td>
-                                <img id="JavaIMG" src="Images/IMG_Java.png" class="skillsIMG" height="200px" width="400px" />
-                                <!--Modal for the image-->
-                                <div id="javaModal" class="modal">
-                                    <!--Close Buttons-->
-                                    <span class="close">&times;</span>
-                                    <!--Modal Content (Java image)-->
-                                    <img class="modal-content" id="IMG03" />
-                                    <ul>
-                                        <h3 align="center">Projects:</h3>
-                                        <li>
-                                            <a href="https://github.com/obvios/Design-Patterns-Project.git" target="_blank">School  group project</a> to demonstrate knowledge of
-                                            various design patterns in Java.
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/obvios/CalendarApp" target="_blank">Andriod app</a> that allows a user to create appointments, update
-                                            appointments, delete appointments, and download appointments for sharing.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--End of Modal-->
-                            </td>
-                        </tr>
-                    </table>
+                    <img id="JavaIMG" src="Images/IMG_Java.png" class="skillsIMG" height="200px" width="300px" />
+                    <!--Modal for the image-->
+                    <div id="javaModal" class="modal">
+                        <!--Close Buttons-->
+                        <span class="close">&times;</span>
+                        <!--Modal Content (Java image)-->
+                        <img class="modal-content" id="IMG03" />
+                        <ul>
+                            <h3 align="center">Projects:</h3>
+                            <li>
+                                <a href="https://github.com/obvios/Design-Patterns-Project.git" target="_blank">School  group project</a> to demonstrate knowledge of
+                                various design patterns in Java.
+                            </li>
+                        </ul>
+                    </div>
+                    <!--End of Modal-->
+                </li>
+                <li>
+                    <img id="AndroidRobotIMG" src="Images/IMG_AndroidRobot.jpg" class="skillsIMG" height="200px" width="300px" />
+                    <!--Modal for the image-->
+                    <div id="androidModal" class="modal">
+                        <!--Close Buttons-->
+                        <span class="close">&times;</span>
+                        <!--Modal Content (Java image)-->
+                        <img class="modal-content" id="IMG04" />
+                        <ul>
+                            <h3 align="center">Projects:</h3>
+                            <li>
+                                <a href="https://github.com/obvios/CalendarApp" target="_blank">Andriod app</a> that allows a user to create appointments, update
+                                appointments, delete appointments, and download appointments for sharing.
+                            </li>
+                        </ul>
+                    </div>
+                    <!--End of Modal-->
                 </li>
             </ul>
         </div>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
         <script src="websiteJS.js"></script>
     </body>
-
-    <footer>
-        <!--Contact Information-->
-        <div id="Bottom">
-            <h1 align="center">Contact</h1>
-            <ul>
-                <li>
-                    <a href="https://www.github.com/obvios" target="_blank"><img src="Images/IMG_GitHub.png" height="70px" width="70px" />GitHub</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/eric-palma-in" target="_blank"><img src="Images/IMG_LinkedIn.png" height="70px" width="70px"/>LinkedIn</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-
+    
 </html>
+
+<footer>
+    <!--Contact Information-->
+    <div id="Bottom">
+        <h1 align="center">Contact</h1>
+        <ul>
+            <li>
+                <a href="https://www.github.com/obvios" target="_blank"><img src="Images/IMG_GitHub.png" height="70px" width="70px" />GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/eric-palma-in" target="_blank"><img src="Images/IMG_LinkedIn.png" height="70px" width="70px" />LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+</footer>
 <link type="text/css" rel="stylesheet" href="styles.css" />

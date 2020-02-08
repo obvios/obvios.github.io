@@ -1,10 +1,10 @@
 /*Menu*/
-nav ul li a{
+body  ul li a{
 	text-decoration: none;
 	color: black;
 }
 
-nav ul li{
+body nav ul li{
 	display: inline-block;
 	background-color: whitesmoke;
 	padding: 10px;
@@ -14,7 +14,7 @@ nav ul li{
 	border-radius: 10px;
 }
 
-nav ul {
+body nav ul {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -22,7 +22,7 @@ nav ul {
     background-size: cover;
 }
 
-nav ul img{
+body nav ul img{
     padding-top: 20px;
 }
 
@@ -35,6 +35,17 @@ nav ul img{
 /*END Menu*/
 
 /*Body*/
+#About_Me {
+    text-align: center;
+}
+
+#About_Me h3 p{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 700px;
+}
+
 body {
     background-color: whitesmoke;
 }
@@ -43,13 +54,8 @@ body h1{
     padding-top: 20px;
 }
 
-body ul li{
+#ProjectsSection ul li {
     display: inline-block;
-   
-}
-
-body a{
-    color: white;
 }
 
 .skillsIMG {
@@ -74,9 +80,20 @@ footer a{
     padding: 10px;
 }
 
+footer div ul li {
+    display: inline-block;
+}
+
 /*Skills section*/
-#Top_Skills {
-    padding-left: 10%;
+#Top_Skills h2 {
+    text-align: center;
+}
+
+#Top_Skills h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 700px;
 }
 /*END Skills section*/
 
@@ -113,13 +130,18 @@ footer a{
 }
 
 /*Modal content list*/
-.modal ul li{
+#ProjectsSection li .modal ul li{
     color: white;
     text-align: left;
     list-style: circle;
     display: list-item;
-    padding-left: 30%;
     list-style-position: inside;
+    padding-left:20%;
+}
+
+.modal ul a {
+    color: white;
+    text-decoration: underline;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -176,6 +198,11 @@ footer a{
 /*END CSS for Projects Modals*/
 /*END Body*/
 
+#Bottom ul li:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: .2s;
+}
 /*Footer*/
 footer {
     text-align: center;
