@@ -14,15 +14,10 @@ function createHandler(index, modalList, modalImgs){
     }
 }
 
-//functions to create handler for onclick events of close button in modal
-function createSpanHandler(index, modalList){
-    return function() {
-        modalList[index].style.display = "none";
-    }
-}
-
 //initialize all image click handlers and modal span buttons
-for (var i = 0; i < modals.length; i++) {
+for (let i = 0; i < modals.length; i++) {
     images[i].onclick = createHandler(i, modals, modalImages);
-    spans[i].onclick = createSpanHandler(i, modals);
+    spans[i].onclick = function (){
+        modals[i].style.display = "none"
+    }
 }
