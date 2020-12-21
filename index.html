@@ -1,153 +1,154 @@
 <!DOCTYPE html>
-<title>Home</title>
-<html>
 
- 	<head>
-     </head>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Home</title>
+    </head>
 
     <body>
-        <!--Navigation Bar-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#ProjectsSection">Projects</a>
+        <div class="major-column">
+            <div id="about-column" class="horizontal-column-item">
+                <h1>About</h1>
+                <p>
+                Greetings! My name is Eric Palma and I am junior software engineer with a passion for learning and continously
+                improving. I earned a Minor in Computer Science while in college which gave me a solid foundation, however for the
+                most part I am a self taught programmer. Currently my goal is to start a career as an iOS developer. To help
+                me achieve this I have recently developed my first iOS app which can be viewed below.
+                </p>
+            </div>
+
+            <ul class="horizontal-column-item">
+                <li class="contact-item">
+                <a href="https://www.github.com/obvios" target="_blank"><img src="Images/IMG_GitHub.png" height="70px" width="70px" />GitHub</a>
                 </li>
-                <li>
-                    <a href="#Bottom">Contact</a>
+                <li class="contact-item">
+                <a href="https://www.linkedin.com/in/eric-palma-in" target="_blank"><img src="Images/IMG_LinkedIn.png" height="70px" width="70px" />LinkedIn</a>
                 </li>
-                <img src="Images/IMG_Portrait.jpg" alt="Professional Pic" class="center" />
             </ul>
-        </nav>
 
-        <!--Display Personal Info-->
-        <div id="About_Me">
-            <h1>About Me</h1>
-            <h3>
-                <p>
-                    Junior developer with a passion for developing high quality, user-friendly software.
-                    Fast learner with the ability to quickly put newly learned concepts to use.
-                </p>
-            </h3>
-            <h3>
-                <p>
-                Education:&nbsp; California State University Long Beach
-                </p>
-            </h3>
-            <h3>
-                <p>
-                Field of study: &nbsp; Computer Science
-                </p>
-            </h3>
+            <div id="profile-pic-cropper" class = "horizontal-column-item">
+                <img src="Images/IMG_Portrait.jpg" alt="Professional Pic" id="profile-pic" />
+            </div>
         </div>
 
-        <!--List of Skills-->
-        <div id="Top_Skills">
-            <h2>Skills:</h2>
-            <h3>Languages: C++, Python, Java, SQL</h3>
-            <h3>Environments: Linux/Unix, macOS/Windows, iOS/Android</h3>
-            <h3>Version control with Git</h3>
+        <div class="major-column">
+            <div id="skills" class="horizontal-column-item">
+                <h1>Skills</h1>
+                <ul>
+                    <li>Languages: Python, Swift, Java, SQL</li>
+                    <li>Programming paradigms: Object-oriented design and programming. Functional programming.</li>
+                    <li>Version control using Git.</li>
+                    <li>Relational databases.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="major-column">
+            <h1 style="margin-left: 10%;">Work Experience</h1>
+            <h2 style="margin-left: 15%;">Innovative Engineering Systems, Inc</h2>
+            <ul style="margin-left: 15%;">
+                <li>Learned how to work under the Agile model of software development.</li>
+                <li>Developed company-wide applications to improve business processes, digitize paper forms, and create more efficient workflows.</li>
+                <li>Juggled multiple projects under minimal supervision and took ownership of design, implementation, and testing.</li>
+                <li>Translated high-level business requirements into technical design and appropriate data models.</li>
+                <li>Developed asset tracking solution for the company's IT staff that reduced time spent on auditing by 30%.</li>
+                <li>Worked with the safety, fleet management, and operations managers to update forms for completing and submitting vehicle inspections that resulted in a 20% reduction of form completion time, improved data integrity, and accomplished efficient data collection for auditing and reporting.</li>
+            </ul>
         </div>
 
-        <!--Display Projects-->
-        <div id="ProjectsSection">
-            <h1 align="center">Projects</h1>
+        <div class="major-column">
+            <h1 style="margin-left: 10%;">Projects</h1>
+            <ul id="project-images-list" style="margin-left: 10%;">
+                <li class="Project-modal-image-container">
+                    <img src="Images/FullIcon.png" style="border-radius: 50%" class="Project-modal-image-container-image" id="Easy-Cash-Flow">
+                </li>
 
-            <!--Projects-->
-            <ul align="center">
-                <li>
-                    <img id="CIMG" src="Images/IMG_C++Icon.png" class="skillsIMG" height="200px" width="300px" />
-                    <!--Modal for the image-->
-                    <div id="c++Modal" class="modal">
-                        <!--Close Buttons-->
-                        <span class="close">&times;</span>
-                        <!--Modal Content (Nessus image)-->
-                        <img class="modal-content" id="IMG01" />
-                        <ul>
-                            <h3 align="center">Projects:</h3>
-                            <li>
-                                <a href="https://github.com/obvios/Document-Classifier" target="_blank">Document Classifier</a> which can
-                                label a text file as being either about politics or religion
-                            </li>
-                            <li>
-                                <a href="https://github.com/obvios/Task-Scheduler.git" target="_blank">Unit Task SCheduler</a> which uses a disjoint-set implementation to schedule tasks for a single processor
-                            </li>
-                        </ul>
-                    </div>
-                    <!--End of Modal-->
+                <li class="Project-modal-image-container">
+                    <img src="Images/IMG_Python.png" class="Project-modal-image-container-image" id="Python-Project">
                 </li>
-                <li>
-                    <img id="PythonIMG" src="Images/IMG_Python.png" class="skillsIMG" height="200px" width="300px" />
-                    <!--Modal for the image-->
-                    <div id="pythonModal" class="modal">
-                        <!--Close Buttons-->
-                        <span class="close">&times;</span>
-                        <!--Modal Content-->
-                        <img class="modal-content" id="IMG02" />
-                        <ul>
-                            <h3 align="center">Projects:</h3>
-                            <li>
-                                Simple <a href="https://github.com/obvios/Nmap-Gui.git" target="_blank">Nmap Gui</a> to scan a network with the option of specifying
-                                an IP range as well as a port range.
-                            </li>
-                        </ul>
-                    </div>
-                    <!--End of Modal-->
-                </li>
-                <li>
-                    <img id="JavaIMG" src="Images/IMG_Java.png" class="skillsIMG" height="200px" width="300px" />
-                    <!--Modal for the image-->
-                    <div id="javaModal" class="modal">
-                        <!--Close Buttons-->
-                        <span class="close">&times;</span>
-                        <!--Modal Content (Java image)-->
-                        <img class="modal-content" id="IMG03" />
-                        <ul>
-                            <h3 align="center">Projects:</h3>
-                            <li>
-                                <a href="https://github.com/obvios/Design-Patterns-Project.git" target="_blank">School  group project</a> to demonstrate knowledge of
-                                various design patterns in Java.
-                            </li>
-                        </ul>
-                    </div>
-                    <!--End of Modal-->
-                </li>
-                <li>
-                    <img id="AndroidRobotIMG" src="Images/IMG_AndroidRobot.jpg" class="skillsIMG" height="200px" width="300px" />
-                    <!--Modal for the image-->
-                    <div id="androidModal" class="modal">
-                        <!--Close Buttons-->
-                        <span class="close">&times;</span>
-                        <!--Modal Content (Java image)-->
-                        <img class="modal-content" id="IMG04" />
-                        <ul>
-                            <h3 align="center">Projects:</h3>
-                            <li>
-                                <a href="https://github.com/obvios/CalendarApp" target="_blank">Andriod app</a> that allows a user to create appointments, update
-                                appointments, delete appointments, and download appointments for sharing.
-                            </li>
-                        </ul>
-                    </div>
-                    <!--End of Modal-->
+
+                <li class="Project-modal-image-container">
+                    <img src="Images/Home.png" style="border-radius: 50%;" class="Project-modal-image-container-image" id="Calendar-App">
                 </li>
             </ul>
         </div>
+
+        <!--Modals-->
+        <div class="modal" id="Easy-Cash-Flow-modal">
+                        <span class="close">&times;</span>
+
+            <div class="modal-image-container">
+                <img src="Images/ecf_month_detail.png">
+            </div>
+            
+            <div class="project-description" style="margin-top:50px;">
+                <p style="color: white; margin-left: 20%; margin-right: 20%; font-size: 1.2em;">
+                Easy Cash Flow is an offline first iOS app that gives users a monthly, and yearly, overview
+                of their cash flow. Users simply enter their transactions (income or expense) and Easy Cash Flow
+                does the rest.
+                </p>
+
+                <p style="color: white; margin-left: 20%; margin-right: 20%; font-size: 1.2em;">
+                While developing this app I learned how to utilize software architecture in order to keep things organized
+                and simplify updates. I also followed Test Driven Development principles and learned the importance of
+                writing testable code and simple unit tests.
+                </p>
+
+                <p style="color: white; margin-left: 20%; margin-right: 20%; font-size: 1.2em;">
+                Other skills learned: Programmatic UI, Dependency Injection, UIKit, and RealmDB.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="modal" id="Python-Project-modal">
+                        <span class="close">&times;</span>
+
+            <div class="modal-image-container">
+                <img src="Images/django_rest.jpeg">
+            </div>
+            
+            <div class="project-description" style="margin-top:50px;">
+                <p style="color: white; margin-left: 20%; margin-right: 20%; font-size: 1.2em;">
+                Utilizing the Django-Rest-Framework for Python, I developed a backend service for my
+                Easy Cash Flow app that allows users access to their data accross devices
+                using an account.
+                </p>
+
+                <p style="color: white; margin-left: 20%; margin-right: 20%; font-size: 1.2em;">
+                While developing this service I learned the principles of REST and how to properly design
+                a scalable API. This project also helped me better understand how the front-end interacts with
+                the backend and how to work with JSON on both ends.
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal" id="Calendar-App-modal">
+                        <span class="close">&times;</span>
+
+            <div class="modal-image-container">
+                <img src="Images/Home.png">
+            </div>
+            
+            <div class="project-description" style="margin-top:50px;">
+                <p style="color: white; margin-left: 20%; margin-right: 20%; font-size: 1.2em;">
+                While in college I worked in a team of two to develop a scheduling app for Android.
+                The app allowed users to create appointments and track them within the application. They were also able to
+                share those appointments with other users of the app.
+                </p>
+
+                <p style="color: white; margin-left: 20%; margin-right: 20%; font-size: 1.2em;">
+                Throughout the development process I learned how to gather requirements and translate
+                them into a design. I also learned about persistent data storage and how to work with
+                Object Relational Mapping (ORM) tools to simplify working with persistent storage.
+                </p>
+            </div>
+            </div>
+        </div>
+
         <script src="websiteJS.js"></script>
     </body>
-    
 </html>
 
-<footer>
-    <!--Contact Information-->
-    <div id="Bottom">
-        <h1 align="center">Contact</h1>
-        <ul>
-            <li>
-                <a href="https://www.github.com/obvios" target="_blank"><img src="Images/IMG_GitHub.png" height="70px" width="70px" />GitHub</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/eric-palma-in" target="_blank"><img src="Images/IMG_LinkedIn.png" height="70px" width="70px" />LinkedIn</a>
-            </li>
-        </ul>
-    </div>
-</footer>
-<link type="text/css" rel="stylesheet" href="styles.css" />
