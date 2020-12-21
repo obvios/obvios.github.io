@@ -1,23 +1,14 @@
-'use strict';
+'use strict'
 
-//set up lists with classes
-var modals = document.getElementsByClassName("modal");
-var images = document.getElementsByClassName("skillsIMG");
-var modalImages = document.getElementsByClassName("modal-content");
+var modalImageList = document.getElementsByClassName("Project-modal-image-container-image");
 var spans = document.getElementsByClassName("close");
 
-//functions to create handler for onclick events of images
-function createHandler(index, modalList, modalImgs){
-    return function() {
-        modalList[index].style.display = "block";
-        modalImgs[index].src = this.src;
+for(let i = 0; i < modalImageList.length; i++){
+    let modal = document.getElementById(modalImageList[i].id + '-modal');
+    modalImageList[i].onclick = function(){
+        modal.style.display = "block";
     }
-}
-
-//initialize all image click handlers and modal span buttons
-for (let i = 0; i < modals.length; i++) {
-    images[i].onclick = createHandler(i, modals, modalImages);
-    spans[i].onclick = function (){
-        modals[i].style.display = "none"
+    spans[i].onclick = function(){
+        modal.style.display = "none";
     }
 }
