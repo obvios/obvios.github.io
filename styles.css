@@ -17,10 +17,6 @@ body {
     display: inline-block;
 }
 
-.major-column h1 {
-    font-size: 2vw;
-}
-
 .contact-item{
     list-style-type: none;
     margin-top: 30px;
@@ -55,6 +51,10 @@ body {
 
 #skills {
     margin-left: 10%;
+}
+
+#skills ul li{
+    font-size: 1.2em;
 }
 
 #project-images-list ul {
