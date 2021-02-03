@@ -12,3 +12,10 @@ for(let i = 0; i < modalImageList.length; i++){
         modal.style.display = "none";
     }
 }
+
+var majorRows = document.getElementsByClassName("major-column");
+for(let i = 0; i < majorRows.length; i++){
+	if(i % 2 != 0){
+		majorRows[i].style.backgroundColor = "whitesmoke";
+	}
+}
