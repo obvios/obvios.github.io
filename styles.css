@@ -19,15 +19,14 @@ body {
 
 .contact-item{
     list-style-type: none;
-    margin-top: 30px;
-    margin-left: 50px;
+    margin-top: 50px;
+    margin-left: auto;
 }
 
 #about-column {
-    margin-top: 10px;
-    margin-left: 10%;
-    width: 450px;
-    float:left;
+	font-size: 1.2em;
+	max-width: 45vw;
+    margin: auto;	
 }
 
 #profile-pic-cropper{
@@ -39,8 +38,8 @@ body {
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
        overflow: hidden;
-    float: right;
-    margin-right: 50px;
+       float: left;
+       margin-right: 3.5vw;
 }
 
 #profile-pic{
