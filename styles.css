@@ -1,33 +1,37 @@
 
-body {
-    background-color: white;
+html, body {
+    width: 100%;
+    margin: 0;
 }
 
 .major-column {
-    margin-top: 30px;
-    margin-right: 2vw;
-    margin-left: 2vw;
     /*border: 2px solid red;*/
     display: block;
     overflow:auto;
-    background-color: whitesmoke;
+    background-color: #4C4C4C;
 }
 
-.major-column .horizontal-column-item{
-    display: inline-block;
+.centered-content-container{
+    display: flex;
+    justify-content: center;
 }
 
 .contact-item{
     list-style-type: none;
-    margin-top: 50px;
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: auto;
 }
 
 #about-column {
 	font-size: 1.2em;
-	max-width: 45vw;
-    margin: auto;	
+	margin-right: 15vw;
+	margin-left: 15vw;
 }
+
+#about-column h1{
+	text-align: center;
+}	
 
 #profile-pic-cropper{
     height: 300px;
@@ -38,8 +42,6 @@ body {
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
        overflow: hidden;
-       float: left;
-       margin-right: 3.5vw;
 }
 
 #profile-pic{
