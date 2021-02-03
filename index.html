@@ -7,44 +7,47 @@
 
     <body>
         <div class="major-column">
-            <div id="about-column" class="horizontal-column-item">
+		<div class="centered-content-container">
+		    <div id="profile-pic-cropper">
+			<img src="Images/IMG_Portrait.jpg" alt="Professional Pic" id="profile-pic" />
+		    </div>
+		</div>
+		<div class="centered-content-container">
+			<ul>
+				<p style="paddig-top: 10px; font-size: 32px; font-weight: bold; text-align:center; color: whitesmoke">
+				Eric Palma
+				</p>
+				<p style="text-align:center; font-size: 28px; color: whitesmoke;">
+				Software Developer
+				</p>
+			</ul>
+		</div>
+		<div class="centered-content-container">
+			<li class="contact-item">
+				<a href="https://www.github.com/obvios" target="_blank"><img src="Images/IMG_GitHub.png" height="70px" width="70px" /></a>
+			</li>
+			<li class="contact-item">
+				<a href="https://www.linkedin.com/in/eric-palma-in" target="_blank"><img src="Images/IMG_LinkedIn.png" height="70px" width="70px" /></a>
+			</li>
+		</div>
+	</div>
+        <div class="major-column">
+            <div id="about-column">
                 <h1>About</h1>
-                <p>
+                <p style="font-size: 28px;">
                 Greetings! My name is Eric Palma and I am a junior software engineer with a passion for learning and continously
                 improving. I earned a Minor in Computer Science while in college which gave me a solid foundation in software development
-		principles and since then have worked real hard to continue improving my skills. My current goal is to start a career as a full-time iOS developer
+		principles and since then have worked real hard to continue improving my skills. 
+		</p>
+                <p style="font-size: 28px;">
+		My current goal is to start a career as a full-time iOS developer
 		at a company where I can bring wonderful products to the hands of many.
                 </p>
             </div>
-
-            <ul class="horizontal-column-item">
-                <li class="contact-item">
-                <a href="https://www.github.com/obvios" target="_blank"><img src="Images/IMG_GitHub.png" height="70px" width="70px" />GitHub</a>
-                </li>
-                <li class="contact-item">
-                <a href="https://www.linkedin.com/in/eric-palma-in" target="_blank"><img src="Images/IMG_LinkedIn.png" height="70px" width="70px" />LinkedIn</a>
-                </li>
-            </ul>
-
-            <div id="profile-pic-cropper" class = "horizontal-column-item">
-                <img src="Images/IMG_Portrait.jpg" alt="Professional Pic" id="profile-pic" />
-            </div>
         </div>
 
         <div class="major-column">
-            <div id="skills" class="horizontal-column-item">
-                <h1>Skills</h1>
-                <ul>
-                    <li>Languages: Python, Swift, Java, SQL</li>
-                    <li>Programming paradigms: Object-oriented design and programming. Functional programming.</li>
-                    <li>Git for version control and collaboration.</li>
-                    <li>Designing and working with relational databases.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="major-column">
-            <h1 style="margin-left: 10%;">Projects</h1>
+            <h1 style="text-align: center; color: whitesmoke;">Projects</h1>
             <ul id="project-images-list" style="margin-left: 10%;">
                 <li class="Project-modal-image-container">
                     <img src="Images/FullIcon.png" style="border-radius: 50%" class="Project-modal-image-container-image" id="Easy-Cash-Flow">
