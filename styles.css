@@ -36,7 +36,7 @@ html, body {
 #about-column p{
 	font-size: 5vw;
 }
-@media screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px){
 	#about-column p{
 		font-size: 24px;
 	}
