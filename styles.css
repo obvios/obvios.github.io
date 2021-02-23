@@ -23,6 +23,23 @@ html, body {
     padding-left: auto;
 }
 
+#name-header {
+	font-size: 5.5vw;
+	font-weight: bold;
+	text-align: center;
+	color: whitesmoke;
+	padding-top: 10px;
+}
+
+#title-header {
+	font-size: 5vw;
+	font-weight: bold;
+	text-align: center;
+	color: whitesmoke;
+	padding-top: 10px;
+}
+
+
 #about-column {
 	font-size: 1.2em;
 	margin-right: 15vw;
@@ -36,8 +53,17 @@ html, body {
 #about-column p{
 	font-size: 5vw;
 }
+
 @media only screen and (min-width: 1000px){
 	#about-column p{
+		font-size: 24px;
+	}
+
+	#name-header {
+		font-size: 32px;
+	}
+
+	#title-header {
 		font-size: 24px;
 	}
 }
