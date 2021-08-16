@@ -91,14 +91,6 @@ html, body {
 
 }
 
-#skills {
-    margin-left: 10%;
-}
-
-#skills ul li{
-    font-size: 1.2em;
-}
-
 #project-images-list ul {
     list-style-type: none;
 }
